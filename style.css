@@ -1,0 +1,135 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    margin: 0;
+    background-color: white;
+    -webkit-font-smoothing: anatialiased;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+/* =====  Container ===== */
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* ===== Header ===== */
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100px;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #50546a;
+    padding: 35px 0;
+    align-items: center;
+}
+
+/* ===== Navigation ===== */
+
+.nav {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    opacity: .75;
+    transition: opacity .1s linear;
+    margin-left: 50px;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+.nav__link:hover {
+    opacity: 1;
+}
+
+/* ==== Intro ===== */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    background: #31354f url(img/headerBG.jpg) center no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.intro__inner {
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    color: white;
+    font-weight: 700;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.intro__subtitle {
+    font-size: 22px;
+    color: white;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+/* ===== Button ===== */
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 2px;
+    font-family: inherit;
+    border: 0;
+    cursor: pointer;
+    transition: background .1s linear;
+}
+
+.btn--red {
+    background-color: #e84545;
+
+}
+
+.btn--red:hover {
+    background-color: #c42f2f;
+}
